@@ -662,7 +662,7 @@ if uploaded_file is not None:
     localtime = time.asctime( time.localtime(time.time()) )
     st.subheader(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     ####
-# Open the video    
+    # Open the video    
     video_cap = cv2.VideoCapture(video_path)
         
     # Get some video parameters to generate output video with classificaiton.
