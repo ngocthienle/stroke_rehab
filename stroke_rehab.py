@@ -650,10 +650,7 @@ uploaded_file = st.file_uploader("Upload a video", type=["mp4", "mov"])
 
 if uploaded_file is not None:
     st.video(uploaded_file)
-    #Measure the time
-    localtime = time.asctime( time.localtime(time.time()) )
-    st.subheader(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-    ####
+
     video_path = uploaded_file.name
     with open(video_path, mode='wb') as f:
         f.write(uploaded_file.read()) # Reading the video
@@ -661,7 +658,10 @@ if uploaded_file is not None:
     
     class_name='pushups_down'
     out_video_path = "result.mp4"
-    
+    #Measure the time
+    localtime = time.asctime( time.localtime(time.time()) )
+    st.subheader(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    ####
 # Open the video    
     video_cap = cv2.VideoCapture(video_path)
         
