@@ -3,7 +3,6 @@ pandas
 opencv-python-headless
 streamlit
 requests
-io
 tqdm
 csv
 mediapipe
