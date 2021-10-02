@@ -631,7 +631,7 @@ class PoseClassificationVisualizer(object):
 
 ######################
 # NAME OF PAGE
-logo_image = Image.open('D:\OneDrive\streamlitprojects\strokeapps/logo.png')
+logo_image = Image.open('logo.png')
 st.set_page_config(page_title = 'StrokeRehab', page_icon=logo_image)
 
 # Create web-app title
@@ -676,7 +676,7 @@ if uploaded_file is not None:
     
     # Folder with pose class CSVs. That should be the same folder you using while
     # building classifier to output CSVs.
-    pose_samples_folder = 'D:\OneDrive\streamlitprojects\strokeapps/fitness_poses_csvs_out'
+    pose_samples_folder = 'fitness_poses_csvs_out'
 
     # Initialize tracker.
     pose_tracker = mp_pose.Pose()
