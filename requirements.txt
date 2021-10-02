@@ -2,7 +2,6 @@ numpy
 pandas
 opencv-python-headless
 streamlit
-os
 time
 requests
 io
