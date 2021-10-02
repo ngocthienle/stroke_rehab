@@ -4,5 +4,4 @@ opencv-python-headless
 streamlit
 requests
 tqdm
-csv
 mediapipe
